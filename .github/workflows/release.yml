@@ -44,7 +44,7 @@ jobs:
           releaseDraft: true
           prerelease: false
           includeDebug: true
-      - uses: u
+      - name: u
         uses: actions/upload-artifact@v2
         with:
           name: app-artifacts
