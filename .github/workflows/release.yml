@@ -44,3 +44,8 @@ jobs:
           releaseDraft: true
           prerelease: false
           includeDebug: true
+          - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: app-artifacts
+          path: /home/runner/work/biliup-app/biliup-app/src-tauri/target/release/bundle/deb/biliup-app_0.4.1_amd64.deb /home/runner/work/biliup-app/biliup-app/src-tauri/target/release/bundle/appimage/biliup-app_0.4.1_amd64.AppImage D:\a\biliup-app\biliup-app\src-tauri\target\release\bundle\msi\biliup-app_0.4.1_x64_en-US.msi D:\a\biliup-app\biliup-app\src-tauri\target\release\bundle\nsis\biliup-app_0.4.1_x64-setup.exe
